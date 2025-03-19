@@ -34,7 +34,7 @@ class MyDocument extends Document {
             href="/feed"
           ></link>
           {/* google search console */}
-          {CONFIG.googleSearchConsole.true === true && (
+          {CONFIG.googleSearchConsole.enable === true && (
             <>
               <meta
                 name="google-site-verification"
@@ -43,7 +43,7 @@ class MyDocument extends Document {
             </>
           )}
           {/* naver search advisor */}
-          {CONFIG.naverSearchAdvisor.true === true && (
+          {CONFIG.naverSearchAdvisor.enable === true && (
             <>
               <meta
                 name="naver-site-verification"
